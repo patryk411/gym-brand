@@ -1,0 +1,193 @@
+.thankyou {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0;
+        margin: 0 auto;
+
+        &__header {
+            margin-bottom: 32px;
+
+            h1 {
+                font-size: 28px;
+                color: #000;
+                margin-bottom: 16px;
+            }
+
+            p {
+                font-size: 16px;
+                color: #000;
+                text-align: center;
+            }
+
+            p:last-child {
+                font-size: 14px;
+                margin-bottom: 0;
+            }
+        }
+
+        &__order-info {
+            &__row {
+                display: flex;
+                flex-direction: row;
+                align-items: start;
+                justify-content: start;
+                width: 100%;
+                
+                img {
+                    width: 100px;
+                    height: 100px;
+                    margin-right: 20px;
+                }
+            }
+
+            &__text {
+                width: 100%;
+                padding-bottom: 12px;
+
+                h3 {
+                    font-size: 16px;
+                    color: #000;
+                    margin-bottom: 0;
+                }
+
+                .price {
+                    font-size: 14px;
+                    margin: 12px 0 0;
+                    color: rgba(0, 0, 0, 0.6);
+                }
+                
+                &--p {
+                    font-size: 14px;
+                    color: rgba(0, 0, 0, 0.6);
+                    margin-bottom: 0;
+                }
+            }
+
+            &__quantity {
+                p {
+                    font-size: 16px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
+        &__row {
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: space-between;
+            padding: 32px 0 20px;
+            border-bottom: 1px solid rgb(224, 190, 154);
+        }
+
+        &__order-block {
+            padding: 20px 32px;
+            border: 1px solid rgb(224, 190, 154);
+            width: 100%;
+            margin-bottom: 32px;
+        }
+
+        &__order-confirm {
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: space-between;
+            padding: 20px 0 12px;
+
+
+            &__note {
+                padding: 0;
+
+                h3,p {
+                    margin-bottom: 0;
+                    font-size: 14px;
+                }
+
+                h3 {
+                    color: #000;
+                }
+
+                p {
+                    color: rgba(0, 0, 0, 0.6);
+                }
+            }
+
+            &__confirm {
+                padding: 0;
+
+                &__row {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: start;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    color: #000;
+                    margin-top: 12px;
+
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+
+                &__row:first-child {
+                    margin-top: 0;
+                }
+
+                &__row:nth-child(3) {
+                    border-bottom: 1px solid rgb(224, 190, 154);
+
+                    p {
+                        padding-bottom: 20px;
+                    }
+                }
+
+                &__row:nth-child(4) {
+                        font-size: 20px;
+                        color: #000;
+                        margin-top: 20px;
+                }
+            }
+        }
+
+        &__footer-info {
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: start;
+            padding: 20px 32px;
+            border: 1px solid rgb(224, 190, 154);
+            width: 100%;
+
+            &__adresses {
+                padding: 0;
+
+                h3 {
+                    font-size: 16px;
+                    color: #000;
+                    margin-bottom: 12px;
+                }
+
+                p {
+                    margin-bottom: 0;
+                    font-size: 14px;
+                    color: #000;
+                }
+
+                p:last-child {
+                    margin-top: 12px;
+                }
+            }
+
+            &__adresses:nth-child(2) {
+                margin: 0 32px;
+            }
+        }
+    }
+}
